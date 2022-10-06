@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    padding: 20px;
+}
+h1{
+    font-size: .75em;
+}
+#St , #Nd , #Rd {
+    position: relative;
+    padding: 15px;
+    padding-top: 30px;
+    margin: 10px;
+    box-sizing: border-box;
+    background-color: darkgrey;
+    border: black 4px solid;
+}
+.SectionTag{
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 25px;
+    width: 20%;
+    border-bottom: black 3px solid;
+    border-left: black 3px solid;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+#T1{
+    background-color: bisque;
+
+}
+#T2{
+    background-color: maroon;
+    color: white;
+}
+#T3{
+    background-color: wheat;
+}
+
+
+@media (min-width:992px){
+    .col-lg-4{
+        float:left;
+        width:31%;
+    }
+}
+@media(min-width:768px) and (max-width:991px){
+    .col-md-6{
+        float:left;
+        width:47%;
+    }
+    .col-md-12{
+        float:left;
+        width:96%;
+    }
+} 
+@media(max-width:767px){
+    .col-sm-12{
+        float:left;
+        width: 100%;
+    }
+}
