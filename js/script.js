@@ -53,3 +53,27 @@ company.name = "NOPWASD";
 company.ceo = new Object();
 company.ceo.name = "Ehab";
 company.ceo.bod = "13/05/1960";
+
+
+
+// so important to add event to element without adding attribute in html
+document.addEventListener("DOMContentLoaded",
+function (event) {
+    
+    function gobig(event) {
+        var lis = document.querySelectorAll("li").textContent;
+        lis += " biger";
+        document.querySelectorAll("li").textContent = lis;
+    }
+
+    function sayhello(event) {
+        var greeting = document.querySelector("h1").textContent;
+        greeting = "Hi " + greeting;
+        document.querySelector("h1").textContent = greeting;
+    }
+
+    document.querySelector("#Assignments").addEventListener("click",sayhello);
+
+    document.querySelector(".designing").addEventListener("click",gobig);
+}
+);
