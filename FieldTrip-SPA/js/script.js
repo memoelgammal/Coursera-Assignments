@@ -86,7 +86,7 @@ $(function(){
        finalHtml += "<section class='row'>";
 
        // loop over categories
-       for (var i = 0; i < categories.lenght; i++) {
+       for (var i = 0; i < categories.length; i++) {
         // insert category values
         var html = categoryHtml;
         var name = "" + categories[i].name;
