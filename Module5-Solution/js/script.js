@@ -82,7 +82,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
 // On first load, show home view
 showLoading("#main-content");
 $ajaxUtils.sendGetRequest(
-  homeHtmlUrl,
+  allCategoriesUrl,
   buildAndShowHomeHTML,
   //function(responseText){
     //document.querySelector("#main-content")
